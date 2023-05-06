@@ -38,7 +38,7 @@
 
                                 <div class="col-md-6">
                                     <input id="apellido" type="text" class="form-control @error('apellido')
-                                     is-invalid @enderror" disabled name="apellido" value="{{$contactos->Nombre}}" 
+                                     is-invalid @enderror" disabled name="apellido" value="{{$contactos->Apellido}}" 
                                      required autocomplete="apellido" autofocus>
 
                                     @error('apellido')
