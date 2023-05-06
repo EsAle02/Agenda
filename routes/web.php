@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\EventoController;
+use App\Http\Controllers\NotaController;
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
+use Whoops\Run;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Rutas contactos//
+Route::resource('/contactos', ContactoController::class);
+
+//Rutas Eventos//
+
+Route::resource('/eventos', EventoController::class);
+
+Route::resource('/notas', NotaController::class);
